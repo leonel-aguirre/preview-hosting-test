@@ -22,6 +22,8 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+
+  animation: rainbow-background 10s infinite linear;
 }
 
 .App-link {
@@ -34,5 +36,17 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes rainbow-background {
+  0% {
+    filter: hue-rotate(0deg)
+  }
+  50% {
+    filter: hue-rotate(180deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
   }
 }
